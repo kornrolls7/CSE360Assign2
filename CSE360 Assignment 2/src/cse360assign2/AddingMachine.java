@@ -9,22 +9,30 @@ public class AddingMachine {
 	}
 	
 	public int getTotal () {
-		return 0;
+		return total;
 	}
 	
 	public void add (int value) {
-		
+		total += value;
 	}
 	
 	public void subtract (int value) {
-		
+		total -= value;
 	}
 		
 	public String toString () {
-		return "";
+		return "Hello Wolrd";
 	}
 
 	public void clear() {
 	
+	}
+	
+	public static void main(String[] args) {
+		AddingMachine myCalculator = new AddingMachine();
+		myCalculator.add(4);
+		myCalculator.subtract(2);
+		myCalculator.add(5);
+		System.out.println(myCalculator.toString());
 	}
 }
